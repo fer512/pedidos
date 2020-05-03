@@ -27,12 +27,12 @@
                     </div>
                     <div class="form-group">
                         <label for="monto">Monto:</label>
-                        <input type="number" class="form-control" id="monto" placeholder="Escriba el monto" name="monto" required>
+                        <input type="number" class="form-control" id="monto" placeholder="Escriba el monto" name="monto" min="0" max="100" required>
                         <div class="text-danger"></div>
                     </div>
                     <div class="form-group">
                         <label for="descuento">Descuento:</label>
-                        <input type="number" class="form-control" id="descuento" placeholder="Escriba el descuento" name="descuento" required>
+                        <input type="number" class="form-control" id="descuento" placeholder="Escriba el descuento" min="0" name="descuento" required>
                         <div class="text-danger"></div>
                     </div>
                     <button class="btn btn-primary" type="submit">Guardar</button>
