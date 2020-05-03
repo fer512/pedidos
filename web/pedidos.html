@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Pedidos</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="pedidos.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="app-pedidos">        
+            <div class="container">
+                <div id="alert-component">
+                </div>
+            </div>
+            
+            <div class="container">
+                <h2>Crear Pedido</h2>
+                <form id="form-pedidos" novalidate>
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Escriba su nombre" name="nombre" required>
+                        <div class="text-danger"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="monto">Monto:</label>
+                        <input type="number" class="form-control" id="monto" placeholder="Escriba el monto" name="monto" required>
+                        <div class="text-danger"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="descuento">Descuento:</label>
+                        <input type="number" class="form-control" id="descuento" placeholder="Escriba el descuento" name="descuento" required>
+                        <div class="text-danger"></div>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Guardar</button>
+                </form>
+            </div>
+            
+        </div>
+    <script src="pedidos.js"></script>
+</body>
+
+</html>
